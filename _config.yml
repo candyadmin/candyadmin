@@ -103,4 +103,4 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:candyadmin/beefly.github.io.git
-  branch: main
+  branch: master
