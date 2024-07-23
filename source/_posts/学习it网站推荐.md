@@ -1,8 +1,11 @@
 ---
+
 title: 学习it网站推荐
 date: 2024-06-26 11:06:14
 tags:
+
 ---
+
 分享一些好的网站，个人学习常用的网站，作为分享后续持续更新.
 
 ## 网站资源
@@ -25,20 +28,21 @@ tags:
   vip破解视频  [https://share.xiaole88.com/其他东西/老齐的IT加油站](https://share.xiaole88.com/其他东西/老齐的IT加油站 "https://share.xiaole88.com/其他东西/老齐的IT加油站")
   [https://share.xiaole88.com/K8渗透工具箱](https://share.xiaole88.com/K8渗透工具箱 "https://share.xiaole88.com/K8渗透工具箱")
 
-
 ### 工具网站：
 
+- [https://www.flickr.com/](https://www.flickr.com/ "https://www.flickr.com/")   好的照片不能我一个人分享
+
 - [https://markmap.js.org/repl](https://markmap.js.org/repl "https://markmap.js.org/repl")  将markmap 生成图例
-
   ![](学习it网站推荐/image_bUw4GOE3i3.png)
+
 - 苹果id相关：
-
+  
   [https://appleid.stryun.top/](https://appleid.stryun.top/ "https://appleid.stryun.top/")
-
+  
   [https://apple.hutaosubconverter.com/hutao](https://apple.hutaosubconverter.com/hutao "https://apple.hutaosubconverter.com/hutao")
 
 ### 营销方向学习：
 
 - 宣传图生成 [https://design.palxp.cn/home?tempid=1188](https://design.palxp.cn/home?tempid=1188 "https://design.palxp.cn/home?tempid=1188")
-
+  
   ![](学习it网站推荐/image_SOZXE0ImbY.png)
