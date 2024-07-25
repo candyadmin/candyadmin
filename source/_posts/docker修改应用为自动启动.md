@@ -1,5 +1,5 @@
 ---
-title: docker常用指令
+title: docker修改应用为自动启动
 date: 2024-07-23 14:39:38
 tags:
 ---
