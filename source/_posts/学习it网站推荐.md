@@ -11,7 +11,7 @@ tags:
 ## 网站资源
 
 ### 技术学习网站
-
+- 盗版书网站：https://zh.singlelogin.re/
 - 架构师学习 [https://bugstack.cn/md/other/guide-to-reading.html#一、本站知识阅览](https://bugstack.cn/md/other/guide-to-reading.html#一、本站知识阅览 "https://bugstack.cn/md/other/guide-to-reading.html#一、本站知识阅览")
   ![](学习it网站推荐/image_PEAqPgamQe.png)
 - 源码学习：[https://doocs.github.io/source-code-hunter/#/](https://doocs.github.io/source-code-hunter/#/ "https://doocs.github.io/source-code-hunter/#/")
