@@ -1,7 +1,8 @@
 ---
 title: 对linux磁盘进行无损扩容
 date: 2024-08-05 20:37:35
-tags:
+categories: linux
+tag: 扩容磁盘
 ---
 
 执行 lsblk 命令得到的数据如下

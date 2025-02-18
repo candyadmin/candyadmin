@@ -1,7 +1,8 @@
 ---
 title: linux下通过端口找到进程
 date: 2024-08-09 14:48:30
-tags:
+categories: linux
+tag: 查找进程
 ---
 在Linux系统中，可以使用以下几种方法通过端口号查找占用该端口的进程：
 

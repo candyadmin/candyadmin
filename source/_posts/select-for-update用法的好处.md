@@ -1,7 +1,8 @@
 ---
 title: select for update用法的好处
 date: 2024-07-25 19:10:03
-tags:
+categories: mysql
+tag: 事务
 ---
 `SELECT FOR UPDATE` 是一种用于数据库管理系统（DBMS）的 SQL 语句，主要用于在事务处理过程中锁定选定的行，防止其他事务修改这些行，直到当前事务完成。这种机制在处理并发访问时尤其有用，以下是其具体好处：
 

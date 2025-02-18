@@ -1,7 +1,8 @@
 ---
 title: docker修改应用为自动启动
 date: 2024-07-23 14:39:38
-tags:
+categories: linux
+tag: docker
 ---
 是的，Docker 提供了一种简单的方法来配置容器在系统启动时自动启动，这就是使用 `docker update` 命令配置容器的重启策略。
 

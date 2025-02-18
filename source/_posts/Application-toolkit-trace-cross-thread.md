@@ -1,7 +1,8 @@
 ---
 title: Application-toolkit-trace-cross-thread
 date: 2024-09-11 15:14:06
-tags:
+categories: Java
+tag: 并发
 ---
 # Trace Cross Thread
 These APIs provide ways to continuous tracing in the cross thread scenario with minimal code changes.

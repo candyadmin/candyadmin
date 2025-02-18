@@ -1,7 +1,8 @@
 ---
 title: 在linux上使用代理
 date: 2024-07-26 09:56:32
-tags:
+categories: clash
+tag: 翻墙
 ---
 要在 Linux 命令行下使用 Clash Verge，需要按照以下步骤进行：
 

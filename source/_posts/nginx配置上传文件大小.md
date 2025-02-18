@@ -1,7 +1,8 @@
 ---
 title: nginx配置上传文件大小
 date: 2024-07-24 16:34:06
-tags:
+categories: linux
+tag: nginx
 ---
 要在Nginx中配置上传文件，您需要对Nginx的配置文件进行一些修改。以下是一个示例配置，说明如何配置Nginx以支持文件上传：
 

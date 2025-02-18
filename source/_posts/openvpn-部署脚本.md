@@ -1,7 +1,8 @@
 ---
 title: openvpn-部署脚本
 date: 2024-08-07 16:02:35
-tags:
+categories: linux
+tag: openvpn
 ---
 脚本连接：
 [openvpn.sh](openvpn-部署脚本/openvpn.sh)

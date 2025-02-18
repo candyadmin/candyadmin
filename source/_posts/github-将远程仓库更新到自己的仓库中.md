@@ -1,7 +1,8 @@
 ---
 title: github 将远程仓库更新到自己的仓库中
 date: 2024-08-13 16:30:29
-tags:
+categories: linux
+tag: git
 ---
 要将远程仓库的更新同步到你本地的Git仓库中，可以按照以下步骤进行：
 

@@ -1,7 +1,8 @@
 ---
 title: spring_state_machine
 date: 2024-09-19 16:35:59
-tags:
+categories: spring-boot
+tag: 状态机
 ---
 Spring Statemachine 是一个用于处理复杂状态机的框架，能够帮助你管理和控制状态转换。以下是如何在 Spring Boot 项目中使用 Spring Statemachine 的基本步骤：
 
