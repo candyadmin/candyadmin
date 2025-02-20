@@ -18,10 +18,6 @@ docker exec -i my-mysql mysql  -u root -p'password'    < /opt/mysql_back/mydatab
 ```
 
 
-新建数据库：
 
-```bash
-docker run -d --restart=always  --name my-mysql -e MYSQL_ROOT_PASSWORD='password' -p 3306:3306 -e TZ=Asia/Shanghai  mysql:8.0.39
-```
 
 
