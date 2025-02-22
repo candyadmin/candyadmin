@@ -12,7 +12,7 @@ tag: 翻墙
 
 #### 下载 Clash
 
-[mihomo-linux-amd64-v1.18.6.deb](在linux上使用代理/mihomo-linux-amd64-v1.18.6.deb)
+[mihomo-linux-amd64-v1.18.6.deb](../../resource/mihomo-linux-amd64-v1.18.6.deb)
 ```bash
 dpkg -i mihomo-linux-amd64-v1.18.6.deb     
 chmod 777 mihomo-linux-amd64-v1.18.6.deb 

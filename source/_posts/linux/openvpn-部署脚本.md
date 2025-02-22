@@ -5,7 +5,7 @@ categories: linux
 tag: openvpn
 ---
 1.执行安装脚本：
-[openvpn.sh](openvpn-部署脚本/openvpn.sh)
+[openvpn.sh](../../resource/openvpn.sh)
 
 2.将覆盖的dns等配置注释掉
 ``` server
