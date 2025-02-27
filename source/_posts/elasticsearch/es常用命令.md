@@ -1,7 +1,8 @@
 ---
 title: es常用命令
 date: 2025-02-27 15:00:37
-tags:
+categories: elasticsearch
+tag: 学习笔记
 ---
 
 以下是 Elasticsearch (ES) 常用命令的总结和笔记：
