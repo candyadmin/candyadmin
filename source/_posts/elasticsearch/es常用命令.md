@@ -333,8 +333,106 @@ GET _analyze
   "analyzer": "standard",
   "text": "2 running Quick brown-foxes leap over lazy dogs in the summer evening."
 }
+
+{
+  "tokens" : [
+    {
+      "token" : "2",
+      "start_offset" : 0,
+      "end_offset" : 1,
+      "type" : "<NUM>",
+      "position" : 0
+    },
+    {
+      "token" : "running",
+      "start_offset" : 2,
+      "end_offset" : 9,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "quick",
+      "start_offset" : 10,
+      "end_offset" : 15,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "brown",
+      "start_offset" : 16,
+      "end_offset" : 21,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "foxes",
+      "start_offset" : 22,
+      "end_offset" : 27,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "leap",
+      "start_offset" : 28,
+      "end_offset" : 32,
+      "type" : "<ALPHANUM>",
+      "position" : 5
+    },
+    {
+      "token" : "over",
+      "start_offset" : 33,
+      "end_offset" : 37,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "lazy",
+      "start_offset" : 38,
+      "end_offset" : 42,
+      "type" : "<ALPHANUM>",
+      "position" : 7
+    },
+    {
+      "token" : "dogs",
+      "start_offset" : 43,
+      "end_offset" : 47,
+      "type" : "<ALPHANUM>",
+      "position" : 8
+    },
+    {
+      "token" : "in",
+      "start_offset" : 48,
+      "end_offset" : 50,
+      "type" : "<ALPHANUM>",
+      "position" : 9
+    },
+    {
+      "token" : "the",
+      "start_offset" : 51,
+      "end_offset" : 54,
+      "type" : "<ALPHANUM>",
+      "position" : 10
+    },
+    {
+      "token" : "summer",
+      "start_offset" : 55,
+      "end_offset" : 61,
+      "type" : "<ALPHANUM>",
+      "position" : 11
+    },
+    {
+      "token" : "evening",
+      "start_offset" : 62,
+      "end_offset" : 69,
+      "type" : "<ALPHANUM>",
+      "position" : 12
+    }
+  ]
+}
+
 ```
 - **分词结果**：`["2", "running", "quick", "brown", "foxes", "leap", "over", "lazy", "dogs", "in", "the", "summer", "evening"]`
+
 
 ### 2. **Simple Analyzer**
 简单分析器按非字母字符切分，符号会被过滤，文本会转换为小写。
