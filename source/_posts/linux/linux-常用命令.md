@@ -29,3 +29,11 @@ WantedBy=multi-user.target
 systemctl daemon-reload
 systemctl enable openvpn-client.service
 ```
+添加jdk环境变量：
+```bash
+　编辑/etc/profile文件 vim /etc/profile    <<---- 通过这种方式，在关闭xshell后，添加的环境变量不生效
+
+　　文件末尾添加：export PATH="/usr/local/nginx/sbin/:$PATH"
+
+　　source  /etc/profile
+```
