@@ -7,6 +7,14 @@ tag: chrome
 #使用docker运行chrome
 ```shell
 docker run -d -p 4444:4444 -p 5900:5900 --name selenium-chrome-debug selenium/standalone-chrome-debug
+docker run -d -p 4444:4444 -p 5900:5900 \
+  --name selenium-chrome-debug \
+  -e TZ="US/Pacific" \
+  -v /dev/shm:/dev/shm \
+  -v /opt/chrome/chrome-data:/home/seluser/.cache --privileged \
+  selenium/standalone-chrome-debug
+
+
 ```
 #使用java代码控制chrome
 ```java
