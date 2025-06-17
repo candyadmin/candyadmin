@@ -34,6 +34,62 @@ SHOW GLOBAL VARIABLES LIKE 'innodb_deadlock_detect';
 SET GLOBAL innodb_deadlock_detect=on;
 ```
 
+### 统计索引情况
+```sql
+SELECT TABLE_NAME, INDEX_NAME, NON_UNIQUE, SEQ_IN_INDEX, COLUMN_NAME, INDEX_TYPE
+FROM information_schema.STATISTICS
+WHERE TABLE_SCHEMA = 'mt5_bybit_demo'
+  AND TABLE_NAME IN (
+                     'mt5_orders',
+                     'mt5_position',
+                     'mt5_orders_history',
+                     'mt5_deals',
+                     'mt5_accounts',
+                     'mt5_groups',
+                     'mt5_users'
+    )
+ORDER BY TABLE_NAME, INDEX_NAME, SEQ_IN_INDEX;
+
+```
+### 普通数据库备份命令
+```sql
+mysqldump -u root -p --databases mt5_bybit_demo --result-file=/home/mysql_backup/mt5_bybit_demo.sql
+```
+### 基于 InnoDB 存储引擎 + MySQL做一致性备份的一种可行方案
+```sql
+-- Q1: 设置当前会话的事务隔离级别为 RR（可重复读）
+SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+
+-- Q2: 启动事务，并创建一个一致性快照，确保整个会话读到的数据一致
+START TRANSACTION WITH CONSISTENT SNAPSHOT;
+
+-- Q3: 设置保存点（可选，主要用于 rollback）
+SAVEPOINT sp;
+
+-- Q4: 获取表结构
+SHOW CREATE TABLE `t1`;
+
+-- Q5: 获取表数据（在一致性视图下）
+SELECT * FROM `t1`;
+
+-- Q6: 回滚到保存点（用于清理状态，通常可选）
+ROLLBACK TO SAVEPOINT sp;
+
+-- 最后提交事务或回滚（如果只是读取，其实可以不用提交）
+ROLLBACK;
+```
+### 查看刷盘配置 innodb_io_capacity ,
+```sql
+SHOW GLOBAL VARIABLES LIKE 'innodb_io_capacity';
+```
+| 硬盘类型            | 类型说明                      | `innodb_io_capacity` | `innodb_io_capacity_max` |
+| --------------- | ------------------------- | -------------------- | ------------------------ |
+| 机械硬盘（HDD）       | 7200 RPM 普通硬盘             | 100 \~ 200           | 200 \~ 400               |
+| SATA 固态（SSD）    | 2.5英寸，SATA 接口             | 300 \~ 800           | 1000 \~ 2000             |
+| M.2 NVMe 固态（高速） | PCIe 3.0/4.0 NVMe（高速 SSD） | 1000 \~ 2000         | 3000 \~ 10000            |
+| 企业级 SSD（高IO）    | 高端 NVMe 企业硬盘/RAID阵列       | 2000 \~ 4000+        | 5000 \~ 20000+           |
+
+
 
 # MySQL 中 SELECT 与 ALTER TABLE 操作对表锁定的影响比较
 ## 一、SELECT 查询的表锁定行为
