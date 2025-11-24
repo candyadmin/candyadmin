@@ -140,8 +140,3 @@ spec:
         periodSeconds: 5
   terminationGracePeriodSeconds: 60
 ```
-
----
-
-如你想结合 Spring Boot actuator 做动态健康状态切换（比如调用 `/actuator/health/readiness` 返回 `DOWN` 状态）。
-
