@@ -4,7 +4,7 @@ date: 2025-10-17 17:51:59
 tags:
 ---
 2️⃣ 查看路由表
-ip route show
+    ip route show
 ```shell
 default via 172.18.8.1 dev enp4s0 proto dhcp src 172.18.8.14 
 default via 172.18.4.1 dev wlx90de8039f84e proto dhcp src 172.18.5.84 metric 600 
