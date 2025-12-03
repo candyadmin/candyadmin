@@ -39,7 +39,7 @@ tag: 表设计
 | exit  |              |                |                  |                              |    |
 
 ```
-[pdm_excel_template.xlsx](%E9%80%9A%E8%BF%87excel%E6%96%87%E6%A1%A3%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90%E8%A1%A8%E8%AE%BE%E8%AE%A1/pdm_excel_template.xlsx)
+[pdm_excel_template.xlsx](通过excel文档快速生成表设计/pdm_excel_template.xlsx)
 该 Excel 用于作为数据库设计的初稿，方便校验字段是否完整、命名是否规范、业务含义是否明确。
 
 ## 2. 将 Excel 表结构转为 PDM（PowerDesigner 数据模型）
@@ -52,7 +52,7 @@ tag: 表设计
 * 为后续生成建表 SQL、影响分析或迭代设计提供基础
 
 通过 PDM 能更直观地验证数据库结构是否符合业务逻辑和扩展需求。
-![bbe82095-e9ee-4c41-969c-0a70a9c6f9f2.png](%E9%80%9A%E8%BF%87excel%E6%96%87%E6%A1%A3%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90%E8%A1%A8%E8%AE%BE%E8%AE%A1/bbe82095-e9ee-4c41-969c-0a70a9c6f9f2.png)
+![bbe82095-e9ee-4c41-969c-0a70a9c6f9f2.png](通过excel文档快速生成表设计/bbe82095-e9ee-4c41-969c-0a70a9c6f9f2.png)
 ```shell
 Option Explicit
  
@@ -148,9 +148,9 @@ End sub
 * 是否存在冗余或缺失的数据结构
 
 最终确认无误后，可基于 PDM 导出：
-![ae4eaa42-ca46-4d69-9cef-068878d45872 (1).png](%E9%80%9A%E8%BF%87excel%E6%96%87%E6%A1%A3%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90%E8%A1%A8%E8%AE%BE%E8%AE%A1/ae4eaa42-ca46-4d69-9cef-068878d45872%20%281%29.png)
+![ae4eaa42-ca46-4d69-9cef-068878d45872 (1).png](通过excel文档快速生成表设计/ae4eaa42-ca46-4d69-9cef-068878d45872%20%281%29.png)
 * 建表 SQL
 * 模型文档
 * 字段字典
 * 后续开发所需的数据库初始化脚本
-* ![1edf348b-0d13-4496-9743-dc09003846d1.png](%E9%80%9A%E8%BF%87excel%E6%96%87%E6%A1%A3%E5%BF%AB%E9%80%9F%E7%94%9F%E6%88%90%E8%A1%A8%E8%AE%BE%E8%AE%A1/1edf348b-0d13-4496-9743-dc09003846d1.png)
+* ![1edf348b-0d13-4496-9743-dc09003846d1.png](通过excel文档快速生成表设计/1edf348b-0d13-4496-9743-dc09003846d1.png)
