@@ -9,3 +9,9 @@ tag: 冷知识
 ```shell
 sudo xattr -r -d com.apple.quarantine /Applications/BongoCat.app
 ```
+小米手机连接无线adb
+```shell
+ adb pair 172.18.6.86:43703
+Enter pairing code: 250904
+Successfully paired to 172.18.6.86:43703 [guid=adb-2e1ee8c4-rV5w7C]
+```
